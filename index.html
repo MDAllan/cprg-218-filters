@@ -3,85 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Paintings</title>
-    <link rel="stylesheets" href="styles.css">
-
+    <title>Madiha's Paintings</title>
+    <link rel="stylesheet" href="styles.css">
+        
+    </script>
 </head>
 <body>
     
 <main>
-<h1>Madiha's Paintings</h1>
-<nav>
-    <ul>
-        <li>Home<a href=""></a></li>
-        <li>Gallary<a href=""></a></li>
-        <li>Progress<a href=""></a></li>
-    </ul>
-</nav>
-<div class="filters">
-    <label for="filters">Filter by:</label>
-    <select id="filters" ></select>
-        <option value="all"></option>
-        <option value="price"></option>
-        <option value="color"></option>
-        <option value=""></option>
-</div>
-<!--section>figure*6>img[src="img$.jpg" alt=""]+figcaption{caption$}
--->
-<section>
-<figure data-price="12" data-category="toys">
-        <img src="img1.jpg" alt="">
-        <figcaption>caption1
-            <p></p>
-            <span></span>
-        </figcaption>
-    </figure>
-
-    <figure data-price="12" data-category="toys">
-        <img src="img2.jpg" alt="">
-        <figcaption>caption2
-            <p></p>
-        </figcaption>
-    </figure>
-
-    <figure data-price="12" data-category="toys">
-        <img src="img3.jpg" alt="">
-        <figcaption>caption3
-            <p></p>
-        </figcaption>
-    </figure>
-
-<figure data-price="12" data-category="toys">
-        <img src="img4.jpg" alt="">
-        <figcaption>caption4
-            <p></p>
-        </figcaption>
-    </figure>
+    <h1>Madiha's Paintings</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#progress">Progress</a></li>
+        </ul>
+    </nav>
     
-<figure data-price="12" data-category="toys">
-        <img src="img5.jpg" alt="">
-        <figcaption>caption5
-            <p></p>
-        </figcaption>
-    </figure>
+    <div class="filters">
+        <label for="style-filter">Filter by Style:</label>
+        <select id="style-filter">
+            <option value="all">Show All</option>
+            <option value="Landscape">Landscape</option>
+            <option value="Portrait">Portrait</option>
+        </select>
+    
+        <label for="color-filter">Filter by Color:</label>
+        <select id="color-filter">
+            <option value="all">Show All</option>
+            <option value="blue">Blue</option>
+            <option value="red">Red</option>
+            <option value="black">Black</option>
+        </select>
+    </div>
+    
+    
+    <section id="gallery">
+        <figure data-price="500" data-style="Landscape" data-color="blue">
+            <img src="images/the waves.jpg" alt="The Waves Painting">
+            <figcaption>
+                <h3>The Waves</h3>
+                <p>The Waves (2022) - A blend of motion and fluidity. This painting represents the changing nature of the ocean. The interplay of the moonlight and silhouettes creates a soft scene where the shadow moves gently in the night. This art piece symbolizes resilience and power through the unstoppable force of the ocean, no matter how hard the waves are, the boat remains strong and steady against the tide. 
+                </p>
+            </figcaption>
+        </figure>
+        
+        <figure data-price="1500" data-style="Landscape" data-color="blue">
+            <img src="images/darkstarrynight.jpg" alt="Dark Starry Night">
+            <figcaption>
+                <h3>The Dark Starry Night</h3>
+                <p>The  Darker Starry Night (2021) - Inspired by Van Gogh’s Starry Night (1889). This version takes a darker, and more mysterious approach. The deep blue and black represent the passage of time and how perspectives change over the years. The yellow stars represent the uniqueness of each person shining bright in the dark sky. </p>
+            </figcaption>
+        </figure>
+        
+        <figure data-price="200" data-style="Landscape" data-color="blue">
+            <img src="images/lake reflection.jpg" alt="Lake Reflection Painting">
+            <figcaption>
+                <h3>The Reflection</h3>
+                <p>The Reflection (2019) - This painting captures a peaceful and quiet moment. I created this art piece after a summer trip to Lake Louise so it turns out similar to the view I had in my head. This piece focuses on the stillness of water mirroring the sky and the trees. The gentle colors and soft blending make it feel calming. It’s a reminder of how nature mirrors our emotions, reflecting both our inner calm and the beauty that surrounds us.
+                </p>
+            </figcaption>
+        </figure>
 
-<figure data-price="12" data-category="toys">
-        <img src="img6.jpg" alt="">
-        <figcaption>caption6
-            <p></p>
-        </figcaption>
-    </figure>
-</section>
+        <figure data-price="150" data-style="Portrait" data-color="black">
+            <img src="images/blackpanther.jpg" alt="Black Panther Painting">
+            <figcaption>
+                <h3>Black Panther</h3>
+                <p>Black Panther (2020) - This drawing symbolizes strength and resilience. The contrast of the white charcoal on a black background enhances the representation of the art piece. The glowing green eyes represent a sense of guidance and anticipation showing the viewer that no matter how many obstacles we have in our lives we should always have hope and believe in ourselves.</p>
+            </figcaption>
+        </figure>
 
-<section class="video">
-    <h2>my work progress</h2>
-    <video>
-        <source src="" type="mp4">
-    </video>
-</section>
+        <figure data-price="250" data-style="Portrait" data-color="blue">
+            <img src="images/arabian art.jpg" alt="Arabic Calligraphy">
+            <figcaption>
+                <h3>Arabian Calligraphy</h3>
+                <p>Arabian Calligraphy (2024) - Arabic calligraphy is not just about words; it’s a form of art. This piece is so important to me, it was a great opportunity for me to reconnect with my native language after a long time. This art piece showcases the famous verse, "Be patient, you are in our eyes," referring to how God watches over us and cares for us, leaving us with reassurance and patience.
+                </p>
+            </figcaption>
+        </figure>
+        
+        <figure data-price="300" data-style="Portrait" data-color="Red">
+            <img src="images/deathnote.jpg" alt="Death Note Inspired Painting">
+            <figcaption>
+                <h3>Death Note Portrait</h3>
+                <p>Death Note portrait (2022) - Inspired by my favorite anime, Death Note, this piece features a split portrait—half of Light Yagami’s face and half of L’s. A mix of crayons, charcoal, ink, and paint come together to create a dramatic effect of the Art piece. The Death Note was created as a three-dimensional piece and attached to the artwork. The blend of light and shadow adds to the mystery, reflecting the themes of justice, power, and the battle between Light and L.
+                </p>
+            </figcaption>
+        </figure>
+        
+      
+        
+       
+    </section>
+    
+    <section id="progress" class="video">
+        <h2>My Work in Progress</h2>
+        <video controls>
+            <source src="paintingprogress.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
 </main>
 
-<footer>All paintings are original work</footer>
+<footer>
+    <script src="scripts.js"></script>        
+    <p>All paintings are original work &copy; 2025 Madiha Allaq</p>
+</footer>
 
 </body>
 </html>
